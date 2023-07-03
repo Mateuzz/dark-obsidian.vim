@@ -1,3 +1,4 @@
-# Obsidian Inspired theme for (neo)Vim
+# Obsidian Inspired colorscheme for vim and neovim
 
-![image](https://github.com/Mateuzz/obsidian-theme/assets/38082919/8ccb81cf-13a2-4775-bb1a-c83a6f830919)
+![image](https://github.com/Mateuzz/obsidian-theme/assets/38082919/2647c377-b45a-409e-bc17-d7edb709db38)
+
