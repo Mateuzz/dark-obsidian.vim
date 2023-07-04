@@ -1,12 +1,3 @@
-" ----------------------------------------------------
-" Name:       obsidian - vim color scheme
-" Maintainer: Aydar Khabibullin <aydar.kh@gmail.com>
-" URL:        https://github.com/abra/vim-obsidian
-" Version:    0.2
-" Created:    01/30/2011 12:35:30 AM
-" Modified:   04/08/2016 07:57:13 PM
-" ----------------------------------------------------
-
 set background=dark
 hi clear
 
@@ -29,7 +20,8 @@ let s:ObOrange = '#efa00a'
 let s:ObLightGreen = '#B5CEA8'
 let s:ObWhite = '#d8a870'
 let s:ObLineNr = '#98a59f'
-let s:ObVariableGreyRed = '#c5bdbd'
+let s:ObVariableGreyRed = '#cfc5c5'
+let s:ObField = '#aaaaaa'
 let s:ObColorLine = "#17150c"
 let s:ObUnderline = "#78a9e0"
 let s:ObCocFadeOutBg = s:ObColorLine
@@ -124,8 +116,8 @@ execute "hi @keyword guifg="  . s:Colors[2] . " guibg=" . s:Colors[12] . " gui=n
 execute "hi @StorageClass guifg="  . s:Colors[2] . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi @label guifg="  . s:Colors[2] . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi @operator guifg="  . s:Colors[7] . " guibg=" . s:Colors[12] . " gui=none"
-execute "hi @field guifg="  . s:Colors[1] . " guibg=" . s:Colors[12] . " gui=none"
-execute "hi @property guifg="  . s:Colors[1] . " guibg=" . s:Colors[12] . " gui=none"
+execute "hi @field guifg="  . s:ObField . " guibg=" . s:Colors[12] . " gui=none"
+execute "hi @property guifg="  . s:ObField . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi @boolean guifg="  . s:Colors[2] . " guibg=" . s:Colors[12] . " gui=none"
 
 
