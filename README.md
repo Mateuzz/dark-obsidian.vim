@@ -1,6 +1,6 @@
 # Obsidian Inspired colorscheme for vim and neovim
 
-![image](https://github.com/Mateuzz/obsidian-theme/assets/38082919/2647c377-b45a-409e-bc17-d7edb709db38)
+![image](https://github.com/Mateuzz/dark-obsidian.vim/assets/38082919/af407142-b5cd-4944-87c8-14a2cc1dbcac)
 
 ## Original Theme
 
