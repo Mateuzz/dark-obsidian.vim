@@ -1,6 +1,7 @@
 set background=dark
 hi clear
 
+
 if exists("syntax_on")
   syntax reset
 endif
@@ -11,7 +12,7 @@ let s:Colors = [
   \'#d5a400','#ec7600','#ef6830',
   \'#d5cb7d','#c38765','#4e5a5f',
   \'#678cb1','#5899c0','#5ab9be',
-  \'#1a1a15','#24333a','#e1c70d',
+  \'#1a1a1a','#24333a','#e1c70d',
   \'#ffffff','#3c5975','#374043']
 
 let s:ObLightYellow = "#eCeCAA"
@@ -20,15 +21,17 @@ let s:ObOrange = '#efa00a'
 let s:ObLightGreen = '#B5CEA8'
 let s:ObWhite = '#d8a870'
 let s:ObLineNr = '#98a59f'
-let s:ObVariableGreyRed = '#cfc5c5'
-let s:ObField = '#aaaaaa'
+let s:ObVariableGreyRed = '#cfd5d5'
+let s:ObField = '#cfd5ef'
 let s:ObColorLine = "#17150c"
 let s:ObUnderline = "#78a9e0"
 let s:ObCocFadeOutBg = s:ObColorLine
+let s:cdGreen = '#6A9955'
+let s:ColorColumn = "#151515"
 
 " Syntax
 execute "hi Normal  guifg="     . s:ObVariableGreyRed  . " guibg=" . s:Colors[12] . " gui=none"
-execute "hi Comment guifg="     . s:Colors[8]  . " guibg=" . s:Colors[12] . " gui=italic"
+execute "hi Comment guifg="     . s:Colors[0]  . " guibg=" . s:Colors[12] . " gui=italic"
 execute "hi Conditional guifg=" . s:Colors[2]  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi Constant guifg="    . s:Colors[1]  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi Error guifg="       . s:Colors[7]  . " guibg=" . s:Colors[12] . " gui=none"
@@ -60,7 +63,7 @@ execute "hi DiffDelete guifg="   . s:Colors[12] . " guibg=" . s:Colors[5] . " gu
 
 
 " Groups
-execute "hi ColorColumn guifg=NONE guibg=" . s:Colors[13] . " gui=none"
+execute "hi ColorColumn guifg=NONE guibg=" . s:ColorColumn . " gui=none"
 " execute "hi Cursor guifg="      . s:Colors[12] . " guibg=" . s:Colors[2]  . " gui=none"
 execute "hi CursorLine guifg=NONE guibg=" . s:ObColorLine
 execute "hi CursorColumn guifg=". s:Colors[1]  . " guibg=" . s:Colors[13] . " gui=none"
