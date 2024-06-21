@@ -12,7 +12,7 @@ let s:Colors = [
   \'#d5a400','#ec7600','#ef6830',
   \'#d5cb7d','#c38765','#4e5a5f',
   \'#779fd1','#5899c0','#5ab9be',
-  \'#211f20','#24333a','#e1c70d',
+  \'#060610','#24333a','#e1c70d',
   \'#ffffff','#3c5975','#374043']
 
 let s:ObLightYellow = "#eCeCAA"
@@ -24,7 +24,7 @@ let s:ObLineNr = '#98a59f'
 let s:ObVariableGreyRed = '#bfdadf'
 let s:ObField= '#aff5ff'
 let s:ObVariableParameter = '#d0d5a4'
-let s:ObColorLine = "#17150c"
+let s:ObColorLine = "#202020"
 let s:ObUnderline = "#78a9e0"
 let s:ObCocFadeOutBg = s:ObColorLine
 let s:cdGreen = '#6A9955'
