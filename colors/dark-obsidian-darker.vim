@@ -8,24 +8,23 @@ endif
 let g:colors_name="obsidian"
 
 let s:Colors = [
-  \'#f5e04f','#c9cfdf','#b4e061',
+  \'#b5c0ff','#c9cfdf','#b4e061',
   \'#d5a400','#ec7600','#ef6830',
   \'#d5cb7d','#c38765','#4e5a5f',
-  \'#87bff1','#5899c0','#5ab9be',
-  \'#040000','#24333a','#e1c70d',
+  \'#779fd1','#5899c0','#5ab9be',
+  \'#060610','#24333a','#e1c70d',
   \'#ffffff','#3c5975','#374043']
 
 let s:ObLightYellow = "#eCeCAA"
-let s:Unused = "#eCeCdA"
 let s:ObOrangeYellow = '#efdb8f'
 let s:ObOrange = '#efa00a'
-let s:ObLightGreen = '#a5cE9a'
+let s:ObLightGreen = '#B5CEA8'
 let s:ObWhite = '#d8a870'
-let s:ObLineNr = '#98d5cf'
+let s:ObLineNr = '#98a59f'
 let s:ObVariableGreyRed = '#bfdadf'
 let s:ObField= '#aff5ff'
 let s:ObVariableParameter = '#d0d5a4'
-let s:ObColorLine = "#272f2c"
+let s:ObColorLine = "#202020"
 let s:ObUnderline = "#78a9e0"
 let s:ObCocFadeOutBg = s:ObColorLine
 let s:cdGreen = '#6A9955'
@@ -33,7 +32,7 @@ let s:ColorColumn = "#151515"
 
 " Syntax
 execute "hi Normal  guifg="     . s:ObVariableGreyRed  . " guibg=" . s:Colors[12] . " gui=none"
-execute "hi Comment guifg="     . s:ObLightGreen  . " guibg=" . s:Colors[12] . " gui=italic"
+execute "hi Comment guifg="     . s:Colors[0]  . " guibg=" . s:Colors[12] . " gui=italic"
 execute "hi Conditional guifg=" . s:Colors[2]  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi Constant guifg="    . s:Colors[1]  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi Error guifg="       . s:Colors[7]  . " guibg=" . s:Colors[12] . " gui=none"
@@ -46,7 +45,7 @@ execute "hi Special guifg="     . s:Colors[1]  . " guibg=" . s:Colors[12] . " gu
 execute "hi Statement guifg="   . s:Colors[2]  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi Number guifg="      . s:ObOrange  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi Boolean guifg="     . s:Colors[2] . " guibg=" . s:Colors[12] . " gui=none"
-execute "hi String guifg="      . s:Colors[0]  . " guibg=" . s:Colors[12] . " gui=none"
+execute "hi String guifg="      . s:ObLightGreen  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi Character guifg="   . s:Colors[5]  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi Title guifg="       . s:Colors[1]  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi Todo guifg="        . s:Colors[12] . " guibg=" . s:Colors[0]  . " gui=none guisp=NONE"
@@ -56,9 +55,6 @@ execute "hi Underline guifg="   . s:Colors[10] . " guibg=" . s:Colors[12] . " gu
 execute "hi SignColumn guifg="   . s:Colors[2] . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi Underlined guifg="   . s:ObUnderline . " guibg=" . s:Colors[12] . " gui=BOLD"
 
-" COC
-execute "hi CocUnusedHighlight guifg="       . s:Unused  . " guibg=" . s:Colors[12] . " gui=none"
-"
 
 " GIT 
 execute "hi DiffAdd guifg="   . s:Colors[13] . " guibg=" . s:Colors[10] . " gui=BOLD"
