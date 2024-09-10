@@ -11,12 +11,12 @@ let s:Colors = [
   \'#f5e04f','#c9cfdf','#b4e061',
   \'#d5a400','#ec7600','#ef6830',
   \'#d5cb7d','#c38765','#4e5a5f',
-  \'#87bff1','#5899c0','#5ab9be',
+  \'#779fd1','#5899c0','#5ab9be',
   \'#040000','#24333a','#e1c70d',
   \'#ffffff','#3c5975','#374043']
 
 let s:ObLightYellow = "#eCeCAA"
-let s:Unused = "#eCeCdA"
+let s:Unused = "#9feff0"
 let s:ObOrangeYellow = '#efdb8f'
 let s:ObOrange = '#efa00a'
 let s:ObLightGreen = '#a5cE9a'
@@ -57,7 +57,7 @@ execute "hi SignColumn guifg="   . s:Colors[2] . " guibg=" . s:Colors[12] . " gu
 execute "hi Underlined guifg="   . s:ObUnderline . " guibg=" . s:Colors[12] . " gui=BOLD"
 
 " COC
-execute "hi CocUnusedHighlight guifg="       . s:Unused  . " guibg=" . s:Colors[12] . " gui=none"
+" execute "hi CocUnusedHighlight guifg="       . s:Unused  . " guibg=" . s:Colors[12] . " gui=none"
 "
 
 " GIT 
