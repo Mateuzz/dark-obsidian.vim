@@ -8,23 +8,23 @@ endif
 let g:colors_name="obsidian"
 
 let s:Colors = [
-  \'#b5c0ff','#c9cfdf','#b4e061',
+  \'#b5c0e2','#c9cfdf','#779fd1',
   \'#d5a400','#ec7600','#ef6830',
   \'#d5cb7d','#c38765','#4e5a5f',
-  \'#779fd1','#5899c0','#5ab9be',
-  \'#060610','#24333a','#e1c70d',
+  \'#eae042','#5899c0','#5ab9be',
+  \'#151514','#24333a','#e1c70d',
   \'#ffffff','#3c5975','#374043']
 
-let s:ObLightYellow = "#eCeCAA"
+let s:ObLightYellow = "#eC8C33"
 let s:ObOrangeYellow = '#efdb8f'
-let s:ObOrange = '#efa00a'
-let s:ObLightGreen = '#B5CEA8'
+let s:ObOrange = '#9fdc9a'
+let s:ObLightGreen = '#a5c4b8'
 let s:ObWhite = '#d8a870'
 let s:ObLineNr = '#98a59f'
-let s:ObVariableGreyRed = '#c9e9fa'
-let s:ObField= '#aff5ff'
+let s:ObVariableGreyRed = '#cfcaaf'
+let s:ObField= '#cfcaaf'
 let s:ObVariableParameter = '#d0d5a4'
-let s:ObColorLine = "#202020"
+let s:ObColorLine = "#10100c"
 let s:ObUnderline = "#78a9e0"
 let s:ObCocFadeOutBg = s:ObColorLine
 let s:cdGreen = '#6A9955'
@@ -36,7 +36,8 @@ execute "hi Comment guifg="     . s:Colors[0]  . " guibg=" . s:Colors[12] . " gu
 execute "hi Conditional guifg=" . s:Colors[2]  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi Constant guifg="    . s:Colors[1]  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi Error guifg="       . s:Colors[7]  . " guibg=" . s:Colors[12] . " gui=none"
-execute "hi Identifier guifg="  . s:Colors[9]  . " guibg=" . s:Colors[12] . " gui=none"
+execute "hi Identifier guifg="  . s:ObVariableGreyRed  . " guibg=" . s:Colors[12] . " gui=none"
+execute "hi phpIdentifier guifg="  . s:ObVariableGreyRed  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi Ignore guifg="      . s:Colors[1]
 execute "hi Operator guifg="    . s:Colors[7]  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi PreProc guifg="     . s:Colors[2]  . " guibg=" . s:Colors[12] . " gui=none"
@@ -68,7 +69,7 @@ execute "hi ColorColumn guifg=NONE guibg=" . s:ColorColumn . " gui=none"
 " execute "hi Cursor guifg="      . s:Colors[12] . " guibg=" . s:Colors[2]  . " gui=none"
 execute "hi CursorLine guifg=NONE guibg=" . s:ObColorLine
 execute "hi CursorColumn guifg=". s:Colors[1]  . " guibg=" . s:Colors[13] . " gui=none"
-execute "hi Directory guifg="   . s:Colors[9] . " guibg=" . s:Colors[12] . " gui=none"
+execute "hi Directory guifg="   . s:Colors[2] . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi Include guifg="      . s:Colors[2]  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi Define guifg="      . s:Colors[2]  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi ErrorMsg guifg="    . s:Colors[13] . " guibg=" . s:Colors[7]  . " gui=none"
@@ -105,7 +106,7 @@ execute "hi WildMenu  guifg="   . s:Colors[14] . " guibg=" . s:Colors[5]  . " gu
 execute "hi @type guifg="      . s:Colors[9]  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi @tag.vue guifg="      . s:Colors[9]  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi Typedef guifg="      . s:Colors[9]  . " guibg=" . s:Colors[12] . " gui=none"
-execute "hi @type.builtin guifg="      . s:Colors[9]  . " guibg=" . s:Colors[12] . " gui=none"
+execute "hi @type.builtin guifg="      . s:Colors[2]  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi @variable guifg="      . s:ObVariableGreyRed  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi @include guifg="      . s:Colors[2]  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi @define guifg="      . s:Colors[2]  . " guibg=" . s:Colors[12] . " gui=none"
@@ -135,21 +136,23 @@ execute "hi @boolean guifg="  . s:Colors[2] . " guibg=" . s:Colors[12] . " gui=n
 
 
 " HTML
-execute "hi htmlTag guifg="  . s:Colors[0] . " guibg=" . s:Colors[12] . " gui=none"
+execute "hi htmlTag guifg="  . s:Colors[2] . " guibg=" . s:Colors[12] . " gui=none"
+execute "hi htmlTagN guifg="  . s:Colors[2] . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi htmlEndTag guifg="  . s:Colors[0] . " guibg=" . s:Colors[12] . " gui=none"
-execute "hi htmlTagName guifg="  . s:Colors[9] . " guibg=" . s:Colors[12] . " gui=none"
+execute "hi htmlTagName guifg="  . s:Colors[2] . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi htmlSpecialTagName guifg="  . s:Colors[9] . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi htmlArg guifg="  . s:ObOrangeYellow . " guibg=" . s:Colors[12] . " gui=none"
 
 
 
 " CSS
-execute "hi cssProp guifg="  . s:ObLightYellow . " guibg=" . s:Colors[12] . " gui=none"
+execute "hi cssProp guifg="  . s:ObVariableGreyRed . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi cssIdentifier guifg="  . s:ObLineNr . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi cssClassName guifg="  . s:Colors[10] . " guibg=" . s:Colors[12] . " gui=none"
+execute "hi sassClass guifg="  . s:Colors[10] . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi cssAttr guifg="  . s:ObLightGreen . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi cssAttr guifg="  . s:ObLightGreen . " guibg=" . s:Colors[12] . " gui=none"
-execute "hi cssValueNumber guifg="  . s:Colors[5] . " guibg=" . s:Colors[12] . " gui=none"
+execute "hi cssValueNumber guifg="  . s:ObOrange . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi cssValueLength guifg="  . s:Colors[4] . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi cssUnitDecorators guifg="  . s:ObOrange . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi cssPseudoClass guifg="  . s:ObWhite . " guibg=" . s:Colors[12] . " gui=none"
