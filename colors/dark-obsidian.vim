@@ -8,7 +8,7 @@ endif
 let g:colors_name="obsidian"
 
 let s:Colors = [
-  \'#b5c0ff','#c9cfdf','#b4e061',
+  \'#b5c0ff','#d0e0f2','#b4e061',
   \'#d5a400','#ec7600','#ef6830',
   \'#d5cb7d','#c38765','#4e5a5f',
   \'#779fd1','#5899c0','#5ab9be',
@@ -21,8 +21,8 @@ let s:ObOrange = '#efa00a'
 let s:ObLightGreen = '#B5CEA8'
 let s:ObWhite = '#d8a870'
 let s:ObLineNr = '#98a59f'
-let s:ObVariableGreyRed = '#bfdadf'
-let s:ObField= '#aff5ff'
+let s:ObVariableGreyRed = '#eaeaea'
+let s:ObField= '#a1a1a1'
 let s:ObVariableParameter = '#d0d5a4'
 let s:ObColorLine = "#17150c"
 let s:ObUnderline = "#78a9e0"
