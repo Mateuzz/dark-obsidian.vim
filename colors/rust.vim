@@ -30,6 +30,13 @@ let s:ObCocFadeOutBg = s:ObColorLine
 let s:cdGreen = '#6A9955'
 let s:ColorColumn = "#151515"
 
+let s:gitRedFg = '#ee2222'
+let s:gitRedBg = '#221111'
+let s:gitAddFG = '#33ee66'
+let s:gitAddBG = '#113311'
+let s:gitDiffFG = '#dddd22'
+let s:gitDiffBG = '#333311'
+
 " Syntax
 execute "hi Normal  guifg="     . s:ObVariableGreyRed  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi Comment guifg="     . s:Colors[0]  . " guibg=" . s:Colors[12] . " gui=italic"
@@ -58,9 +65,9 @@ execute "hi Underlined guifg="   . s:ObUnderline . " guibg=" . s:Colors[12] . " 
 
 
 " GIT 
-execute "hi DiffAdd guifg="   . s:Colors[13] . " guibg=" . s:Colors[10] . " gui=BOLD"
-execute "hi DiffChange guifg="   . s:Colors[13]  . " guibg=" . s:ObLightGreen . " gui=BOLD"
-execute "hi DiffDelete guifg="   . s:Colors[12] . " guibg=" . s:Colors[5] . " gui=BOLD"
+execute "hi DiffAdd guifg="   . s:gitAddFG . " guibg=" . s:gitAddBG . " gui=none"
+execute "hi DiffChange guifg="   . s:gitDiffFG  . " guibg=" . s:gitDiffBG . " gui=none"
+execute "hi DiffDelete guifg="   . s:gitRedFg . " guibg=" . s:gitRedBg . " gui=none"
 
 
 
