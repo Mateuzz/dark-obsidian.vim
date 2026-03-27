@@ -30,6 +30,18 @@ let s:ObCocFadeOutBg = s:ObColorLine
 let s:cdGreen = '#6A9955'
 let s:ColorColumn = "#151515"
 
+let s:gitRedFg = '#ee2222'
+let s:gitRedBg = '#221111'
+let s:gitAddFG = '#33ee66'
+let s:gitAddBG = '#113311'
+let s:gitDiffFG = '#dddd22'
+let s:gitDiffBG = '#333311'
+
+let s:fgFold = '#555555'
+let s:bgFold = '#111111'
+let s:matchParenFG = '#448484'
+let s:matchParenBG = s:bgFold
+
 " Syntax
 execute "hi Normal  guifg="     . s:ObVariableGreyRed  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi Comment guifg="     . s:Colors[0]  . " guibg=" . s:Colors[12] . " gui=italic"
@@ -56,10 +68,11 @@ execute "hi SignColumn guifg="   . s:Colors[2] . " guibg=" . s:Colors[12] . " gu
 execute "hi Underlined guifg="   . s:ObUnderline . " guibg=" . s:Colors[12] . " gui=BOLD"
 
 
-" GIT 
-execute "hi DiffAdd guifg="   . s:Colors[13] . " guibg=" . s:Colors[10] . " gui=BOLD"
-execute "hi DiffChange guifg="   . s:Colors[13]  . " guibg=" . s:ObLightGreen . " gui=BOLD"
-execute "hi DiffDelete guifg="   . s:Colors[12] . " guibg=" . s:Colors[5] . " gui=BOLD"
+" GIT
+execute "hi DiffAdd guifg="   . s:gitAddFG . " guibg=" . s:gitAddBG . " gui=none"
+execute "hi DiffChange guifg="   . s:gitDiffFG  . " guibg=" . s:gitDiffBG . " gui=none"
+
+execute "hi DiffDelete guifg="   . s:gitRedFg . " guibg=" . s:gitRedBg . " gui=none"
 
 
 
@@ -73,11 +86,11 @@ execute "hi Include guifg="      . s:Colors[2]  . " guibg=" . s:Colors[12] . " g
 execute "hi Define guifg="      . s:Colors[2]  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi ErrorMsg guifg="    . s:Colors[13] . " guibg=" . s:Colors[7]  . " gui=none"
 execute "hi FoldColumn guifg="  . s:Colors[13] . " guibg=" . s:Colors[12] . " gui=none"
-execute "hi Folded guifg="      . s:Colors[12] . " guibg=" . s:Colors[11] . " gui=none"
+execute "hi Folded guifg="      . s:fgFold . " guibg=" . s:bgFold . " gui=none"
 execute "hi IncSearch guifg="   . s:Colors[1]  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi LineNr guifg="      . s:ObLineNr  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi CursorLineNr guifg="      . s:Colors[2]  . " guibg=" . s:Colors[12] . " gui=none"
-execute "hi MatchParen guifg="  . s:Colors[12] . " guibg=" . s:Colors[11] . " gui=none"
+execute "hi MatchParen guifg="  . s:matchParenFG . " guibg=" . s:matchParenBG . " gui=none"
 execute "hi ModeMsg guifg="     . s:Colors[5]  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi MoreMsg guifg="     . s:Colors[5]  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi NonText guifg="     . s:Colors[17]  . " guibg=" . s:Colors[12] . " gui=none"
@@ -113,6 +126,7 @@ execute "hi @namespace guifg="      . s:Colors[2]  . " guibg=" . s:Colors[12] . 
 execute "hi @parameter guifg="      . s:ObVariableParameter  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi @constructor guifg="      . s:Colors[9]  . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi @function guifg="  . s:ObLightYellow . " guibg=" . s:Colors[12] . " gui=none"
+execute "hi @constructor.cpp guifg="  . s:ObLightYellow . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi @tag.attribute guifg="  . s:ObLightYellow . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi @function.macro guifg="  . s:Colors[1] . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi @constant guifg="  . s:Colors[1] . " guibg=" . s:Colors[12] . " gui=none"
@@ -121,6 +135,7 @@ execute "hi @macro guifg="  . s:ObWhite . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi @constant.builtin guifg="  . s:ObWhite . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi @method guifg="  . s:ObLightYellow . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi @keyword guifg="  . s:Colors[2] . " guibg=" . s:Colors[12] . " gui=none"
+execute "hi @type.builtin.cpp guifg="  . s:Colors[2] . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi @conditional guifg="  . s:Colors[2] . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi @exception guifg="  . s:Colors[2] . " guibg=" . s:Colors[12] . " gui=none"
 execute "hi @repeat guifg="  . s:Colors[2] . " guibg=" . s:Colors[12] . " gui=none"
